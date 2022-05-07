@@ -6,7 +6,7 @@ import (
 )
 
 func mockWebsitesChecker(url string) bool {
-	if url == "waat://furhurtewe.geds" {
+	if url == "waat://furhurterwe.geds" {
 		return false
 	}
 	return true
