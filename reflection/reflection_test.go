@@ -18,8 +18,16 @@ func TestWalk(t *testing.T) {
       }{"Chris"},
       []string{"Chris"},
     },
+    {
+      "struct with two string fields",
+      struct {
+        Name string
+        City string
+      }{"Chris", "London"},
+      []string{"Chris", "London"},
+    },
   }
-  
+
   for _, test := range cases {
     t.Run(test.Name, func(t *testing.T) {
       var got []string
